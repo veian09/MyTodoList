@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: 10,
-    backgroundColor: 'purple',
+    backgroundColor: 'sky blue',
     elevation: 2,
     borderRadius: 8,
     borderColor: '#BDBDBD',
