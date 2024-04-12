@@ -22,6 +22,7 @@ export const TodoList = () => {
 
   return (
     <View style={styles.container}>
+      
       <Text style={styles.header}>Today's Tasks</Text>
       <View style={styles.inputContainer}>
         <TextInput
@@ -30,7 +31,7 @@ export const TodoList = () => {
           value={newTodo}
           onChangeText={(text) => setNewTodo(text)}
         />
-        <Button title="+" onPress={handleAddTodo} color="purple" /> 
+        <Button title="+" onPress={handleAddTodo} color="#87CEEB" /> 
       </View>
       <FlatList
         data={todos}
@@ -47,8 +48,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
-    backgroundColor: 'black', 
+    backgroundColor: '#FFFFFF', // White background
   },
+  
   inputContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -58,19 +60,19 @@ const styles = StyleSheet.create({
     flex: 1,
     marginRight: 16,
     padding: 8,
-    backgroundColor: 'purple',
+    backgroundColor: '', // Sky blue background
     borderRadius: 20,
     paddingHorizontal: 16,
     fontSize: 16,
-    color: '#FFFFFF',
+    color: '#000000', // White text color
     borderWidth: 1,
-    borderColor: '#BDBDBD',
+    borderColor: '#87CEEB', // Same color as input background
   },
   header: {
     fontSize: 28,
     fontWeight: 'bold',
     marginBottom: 16,
-    color: '#FFFFFF',
+    color: '#87CEEB', // Sky blue color
   },
 });
 

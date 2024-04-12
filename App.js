@@ -10,12 +10,13 @@ const CustomDrawerContent = (props) => (
   <DrawerContentScrollView {...props}>
     <View style={styles.drawerContent}>
       <View style={styles.drawerHeader}>
-        <Image source={require('./assets/image.png')} style={styles.drawerImage} />
-        <Text style={styles.mahName}>Dandreb Paul Benalayo</Text>
+        <Image source={require('./assets/veian.jpg')} style={styles.drawerImage} />
+        <Text style={styles.Name}>Veian Keth Cay-uman</Text>
+        <Text style={styles.schoolId}>20201282</Text>
         <Text style={styles.sectionCode}>IT73-IT35B</Text>
+        <Text style={styles.courseDesc}>Application Dev. Emerging Technologies</Text>
         <Text style={styles.courseName}>Bachelor of Science in Information Technology</Text>
-        <Text style={styles.courseDesc}>Logb safe here</Text>
-        <Text style={styles.studId}>202211808@nbsc.edu.ph</Text>
+        <Text style={styles.academicYear}>2023-2024</Text>
       </View>
       <DrawerItemList {...props} />
     </View>
@@ -45,36 +46,43 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   drawerHeader: {
-    backgroundColor: 'purple',
+    backgroundColor: '#87CEEB', // Sky blue background
     paddingVertical: 20,
     paddingHorizontal: 10,
     alignItems: 'center',
   },
-  mahName: {
+  Name: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#FFFFFF',
+    color: '#FFFFFF', // White text color
     marginBottom: 10,
+  },
+  schoolId: {
+    fontSize: 16,
+    color: '#FFFFFF', // White text color
+    marginBottom: 5,
   },
   sectionCode: {
     fontSize: 16,
-    color: '#FFFFFF',
-    marginBottom: 5,
-  },
-  courseName: {
-    fontSize: 14,
-    color: '#FFFFFF',
+    color: '#FFFFFF', // White text color
     marginBottom: 5,
   },
   courseDesc: {
     fontSize: 14,
-    color: '#FFFFFF',
+    color: '#FFFFFF', // White text color
     marginBottom: 5,
   },
-  studId: {
+  courseName: {
     fontSize: 14,
-    color: '#FFFFFF',
+    color: '#FFFFFF', // White text color
+    marginBottom: 5,
   },
+  academicYear: {
+    fontSize: 14,
+    color: '#FFFFFF', // White text color
+    marginBottom: 5,
+  },
+  
   drawerImage: {
     width: 150,
     height: 150,
