@@ -27,17 +27,6 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "environment": {
-      "development": {
-        "apiEndpoint": "http://localhost:3000"
-      },
-      "staging": {
-        "apiEndpoint": "https://staging.api.com"
-      },
-      "production": {
-        "apiEndpoint": "https://api.com"
-      }
-    },
     "extra": {
       "eas": {
         "projectId": "e04b042b-3978-44f8-8b1d-9822d811776a"
