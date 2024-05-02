@@ -21,21 +21,12 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "##87CEEB"
-      }
+      },
+      "package": "com.veian_09.veiankethtodolist"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "environment": {
-      "development": {
-        "apiEndpoint": "http://localhost:3000"
-      },
-      "staging": {
-        "apiEndpoint": "https://staging.api.com"
-      },
-      "production": {
-        "apiEndpoint": "https://api.com"
-      }
+    
     },
     "extra": {
       "eas": {
