@@ -6,7 +6,9 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "start:dev": "NODE_ENV=development node server.js",
+    "start:prod": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "@react-navigation/drawer": "^6.6.15",
